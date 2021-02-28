@@ -1,0 +1,113 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 9000 4200 2500 1950
+U 5FE1F6E2
+F0 "Analog" 50
+F1 "Analog.sch" 50
+F2 "CH3" I L 9000 4550 50 
+F3 "CH2" I L 9000 4650 50 
+F4 "CH1" I L 9000 4750 50 
+F5 "CH0" I L 9000 4850 50 
+F6 "Volt" I L 9000 5050 50 
+F7 "Curr" I L 9000 5150 50 
+$EndSheet
+$Sheet
+S 2500 3950 2050 1900
+U 6007D2AC
+F0 "Power" 50
+F1 "Power.sch" 50
+F2 "IS_GND" I R 4550 4800 50 
+F3 "IS_RLY" I R 4550 5000 50 
+$EndSheet
+$Sheet
+S 6650 4200 1650 1650
+U 5FF10DE2
+F0 "Digital" 50
+F1 "Digital.sch" 50
+F2 "CH3" I R 8300 4550 50 
+F3 "CH2" I R 8300 4650 50 
+F4 "CH1" I R 8300 4750 50 
+F5 "CH0" I R 8300 4850 50 
+F6 "Volt" I R 8300 5050 50 
+F7 "Curr" I R 8300 5150 50 
+F8 "IS_GND" I L 6650 4800 50 
+F9 "IS_5V" I L 6650 4900 50 
+F10 "IS_SDA" I L 6650 4600 50 
+F11 "IS_SCL" I L 6650 4700 50 
+$EndSheet
+Wire Wire Line
+	8300 4550 9000 4550
+Wire Wire Line
+	8300 4650 9000 4650
+Wire Wire Line
+	9000 4750 8300 4750
+Wire Wire Line
+	8300 4850 9000 4850
+Wire Wire Line
+	9000 5050 8300 5050
+Wire Wire Line
+	8300 5150 9000 5150
+Wire Wire Line
+	4550 4800 5500 4800
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5FE5C09C
+P 5600 3100
+F 0 "J1" V 5604 3380 50  0000 L CNN
+F 1 "Conn_02x05_Odd_Even" V 5695 3380 50  0000 L CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 5600 3100 50  0001 C CNN
+F 3 "~" H 5600 3100 50  0001 C CNN
+	1    5600 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 5000 5400 5000
+Wire Wire Line
+	5400 5000 5400 3400
+Wire Wire Line
+	5400 3400 5400 2900
+Connection ~ 5400 3400
+Wire Wire Line
+	5500 2900 5500 3400
+Wire Wire Line
+	5500 3400 5500 4800
+Connection ~ 5500 3400
+Connection ~ 5500 4800
+Wire Wire Line
+	5500 4800 6650 4800
+Wire Wire Line
+	6650 4900 5600 4900
+Wire Wire Line
+	5600 4900 5600 3400
+Wire Wire Line
+	5600 3400 5600 2900
+Connection ~ 5600 3400
+Wire Wire Line
+	5700 2900 5700 3400
+Wire Wire Line
+	5700 3400 5700 4700
+Wire Wire Line
+	5700 4700 6650 4700
+Connection ~ 5700 3400
+Wire Wire Line
+	6650 4600 5800 4600
+Wire Wire Line
+	5800 4600 5800 3400
+Wire Wire Line
+	5800 3400 5800 2900
+Connection ~ 5800 3400
+$EndSCHEMATC
