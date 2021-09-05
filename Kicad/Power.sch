@@ -959,4 +959,6 @@ F 3 "https://www.omron.com/ecb/products/pdf/en-g5q.pdf" H 5200 6200 50  0001 L C
 	1    5200 6200
 	0    1    -1   0   
 $EndComp
+Text Notes 4550 8300 0    50   ~ 0
+This should go to V+ relay\nR33 is probably better being 120R\n\n
 $EndSCHEMATC
